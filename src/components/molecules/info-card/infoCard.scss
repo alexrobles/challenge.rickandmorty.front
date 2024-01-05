@@ -1,0 +1,65 @@
+.info-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 10px;
+  
+    &__image {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+  
+    &__details {
+      .info-card__name {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+  
+      .info-card__status,
+      .info-card__species,
+      .info-card__type,
+      .info-card__gender {
+        font-size: 0.9em;
+        color: #555;
+  
+        span {
+          font-weight: bold;
+        }
+      }
+  
+      .info-card__link {
+        text-decoration: none;
+        color: #007bff;
+        margin-top: 10px;
+        display: block;
+      }
+  
+      .info-card__favorite-button {
+        border: none;
+        cursor: pointer;
+        width: 16rem;
+  
+        .star-icon {
+          font-size: 1.2em;
+          color: #111111;
+  
+          &.active {
+            color: #f39304;
+          }
+        }
+      }
+    }
+  
+    .info-card__gender span {
+      font-weight: bold;
+      color: #28a745;
+    }
+  }
+  
