@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // Header.scss
+  }
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #e9e8e8;
+    color: #333;
+    border-bottom: 1px  #333 solid;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 16px;
+    background-color: #e9e8e8;
+    border-top: 1px  #333 solid;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav-header {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  
+      li {
+        margin-right: 5rem;
+        cursor: pointer;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    &.open {
+      display:block;
+
+    }
+  
+    display: none;
+  }
+
+  .nav-gallery {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      border: 1px solid gray;
+  
+      li {
+        border: 1px solid gray;
+        margin-right: 5rem;
+        cursor: pointer;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    &.open {
+      display: inline-block;
+      padding: 1rem;
+      width: 100%;
+      height: 4rem;
+        
+    }
+  
+    display: none;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  
+    .profile-photo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  
+    .menu-toggle {
+      background: none;
+      border: none;
+      color:  #333;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .main_characters{
+
+        padding: 14rem;
+      
+    }
+  }
+  
